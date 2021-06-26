@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 27%;
+}
+
+.navbar{
+    display: flex;
+}
+
+.nav-list{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list li{ 
+    list-style: none;
+    padding: 26px 36px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato';
+    transition: 0.35s;
+}
+
+.nav-list li a:hover{
+    color: gray;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(top-10-books-every-college-student-read-1024x640.jpeg);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.containerForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.containerForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.containerForm .inputbox input,
+.containerForm .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.containerForm .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.containerForm .inputbox input:focus ~ span,
+.containerForm .inputbox input:valid ~ span,
+.containerForm .inputbox textarea:focus ~ span,
+.containerForm .inputbox textarea:valid ~ span{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.containerForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: springgreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 00.5s;
+}
+
+.containerForm .inputbox input[type="submit"]:hover{
+    background: green;
+}
+
